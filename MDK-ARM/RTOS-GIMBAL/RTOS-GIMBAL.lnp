@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"rtos-gimbal\startup_stm32f103x6.o"
+"rtos-gimbal\main.o"
+"rtos-gimbal\stm32f1xx_it.o"
+"rtos-gimbal\stm32f1xx_hal_msp.o"
+"rtos-gimbal\stm32f1xx_hal_gpio_ex.o"
+"rtos-gimbal\stm32f1xx_hal_i2c.o"
+"rtos-gimbal\stm32f1xx_hal.o"
+"rtos-gimbal\stm32f1xx_hal_rcc.o"
+"rtos-gimbal\stm32f1xx_hal_rcc_ex.o"
+"rtos-gimbal\stm32f1xx_hal_gpio.o"
+"rtos-gimbal\stm32f1xx_hal_dma.o"
+"rtos-gimbal\stm32f1xx_hal_cortex.o"
+"rtos-gimbal\stm32f1xx_hal_pwr.o"
+"rtos-gimbal\stm32f1xx_hal_flash.o"
+"rtos-gimbal\stm32f1xx_hal_flash_ex.o"
+"rtos-gimbal\stm32f1xx_hal_exti.o"
+"rtos-gimbal\stm32f1xx_hal_tim.o"
+"rtos-gimbal\stm32f1xx_hal_tim_ex.o"
+"rtos-gimbal\system_stm32f1xx.o"
+--strict --scatter "RTOS-GIMBAL\RTOS-GIMBAL.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "RTOS-GIMBAL.map" -o RTOS-GIMBAL\RTOS-GIMBAL.axf
